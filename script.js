@@ -7,3 +7,4 @@ document.getElementById('showMore').addEventListener('click', function() {
         this.textContent = 'Приховати додаткову інформацію';
     }
 });
+log.console("Bogdan lox")
