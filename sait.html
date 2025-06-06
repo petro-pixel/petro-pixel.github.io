@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Види солі</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .header {
+            background-color: #3b82f6; /* Blue header */
+            color: #ffffff;
+            padding: 2.5rem 1.5rem;
+            border-bottom-left-radius: 1.5rem;
+            border-bottom-right-radius: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            padding: 1.5rem;
+            transition: transform 0.2s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-image {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover;
+            border-radius: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        .section-title {
+            color: #1e293b; /* Darker text for titles */
+        }
+        .text-content {
+            color: #475569; /* Slightly darker gray for main text */
+        }
+    </style>
+</head>
+<body class="leading-normal">
+    <div class="header">
+        <h1 class="text-4xl font-bold mb-3">Світ Солі: Різноманіття Смаку та Використання</h1>
+        <p class="text-xl opacity-90">Досліджуйте різні види солі, які збагачують наші страви та культури.</p>
+    </div>
+
+    <div class="container py-10">
+        <section class="mb-12">
+            <h2 class="text-3xl font-semibold section-title mb-6 text-center">Що таке сіль?</h2>
+            <p class="text-lg text-content leading-relaxed">
+                Сіль, або хлорид натрію (NaCl), є однією з найважливіших і найдавніших приправ у світі. Вона не лише надає смаку їжі, але й виконує функції консервації та є життєво необхідним елементом для людського організму. Існує безліч видів солі, кожен з яких має свої унікальні властивості, текстуру, смак і застосування. Давайте зануримося у цей дивовижний світ!
+            </p>
+        </section>
+
+        <section>
+            <h2 class="text-3xl font-semibold section-title mb-8 text-center">Найпоширеніші види солі</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Кухонна сіль -->
+                <div class="card">
+                    <img src="https://placehold.co/400x200/e2e8f0/334155?text=Кухонна+Сіль" alt="Зображення Кухонна Сіль" class="card-image">
+                    <h3 class="text-xl font-semibold section-title mb-3">Кухонна (столова) сіль</h3>
+                    <p class="text-content mb-4 flex-grow">
+                        Найбільш поширений вид солі, який використовується щодня. Вона зазвичай дрібного помелу, очищена від домішок і часто йодована для запобігання дефіциту йоду. Ідеально підходить для приготування їжі, випічки та консервації.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-content">
+                        <li>**Тип:** Очищена, дрібний помел</li>
+                        <li>**Застосування:** Універсальна для приготування їжі</li>
+                        <li>**Особливості:** Може бути йодована</li>
+                    </ul>
+                </div>
+
+                <!-- Морська сіль -->
+                <div class="card">
+                    <img src="https://placehold.co/400x200/e2e8f0/334155?text=Морська+Сіль" alt="Зображення Морська Сіль" class="card-image">
+                    <h3 class="text-xl font-semibold section-title mb-3">Морська сіль</h3>
+                    <p class="text-content mb-4 flex-grow">
+                        Видобувається шляхом випаровування морської води. Зберігає природні мінерали, такі як магній, кальцій, калій, що надає їй більш складного смаку. Доступна в різних помелах, від дрібного до крупного пластівцями (флер де сель). Чудово підходить для фінального посипання страв.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-content">
+                        <li>**Тип:** Натуральна, містить мінерали</li>
+                        <li>**Застосування:** Фінальне присмаження, випічка</li>
+                        <li>**Особливості:** Різні помели, багатий смак</li>
+                    </ul>
+                </div>
+
+                <!-- Гімалайська рожева сіль -->
+                <div class="card">
+                    <img src="https://placehold.co/400x200/e2e8f0/334155?text=Гімалайська+Сіль" alt="Зображення Гімалайська Рожева Сіль" class="card-image">
+                    <h3 class="text-xl font-semibold section-title mb-3">Гімалайська рожева сіль</h3>
+                    <p class="text-content mb-4 flex-grow">
+                        Видобувається в Гімалайських горах (Пакистан). Її рожевий відтінок походить від наявності оксиду заліза та інших мінералів. Вважається однією з найчистіших солей. Використовується як для приготування їжі, так і в декоративних цілях (лампи, соляні плити).
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-content">
+                        <li>**Тип:** Кам'яна, багата мінералами</li>
+                        <li>**Застосування:** Кулінарія, декор, соляні лампи</li>
+                        <li>**Особливості:** Рожевий колір, насичений смак</li>
+                    </ul>
+                </div>
+
+                <!-- Кошерна сіль -->
+                <div class="card">
+                    <img src="https://placehold.co/400x200/e2e8f0/334155?text=Кошерна+Сіль" alt="Зображення Кошерна Сіль" class="card-image">
+                    <h3 class="text-xl font-semibold section-title mb-3">Кошерна сіль</h3>
+                    <p class="text-content mb-4 flex-grow">
+                        Має крупніші, пластівцеві або гранульовані кристали, що легко розчиняються. Не містить добавок (наприклад, йоду) і антизлежувачів, що робить її популярною серед шеф-кухарів для контролю солоності. Назва походить від її використання у процесі "кошерування" м'яса.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-content">
+                        <li>**Тип:** Крупнозерниста, без добавок</li>
+                        <li>**Застосування:** Приготування м'яса, кулінарія</li>
+                        <li>**Особливості:** Швидко розчиняється, легко контролювати</li>
+                    </ul>
+                </div>
+
+                <!-- Кам'яна сіль -->
+                <div class="card">
+                    <img src="https://placehold.co/400x200/e2e8f0/334155?text=Кам'яна+Сіль" alt="Зображення Кам'яна Сіль" class="card-image">
+                    <h3 class="text-xl font-semibold section-title mb-3">Кам'яна сіль</h3>
+                    <p class="text-content mb-4 flex-grow">
+                        Видобувається з підземних родовищ, що залишилися від стародавніх морів. Вона є мінералом галітом. Зазвичай крупного помелу, використовується для консервації, приготування розсолів, а також як сіль для дорожніх покриттів взимку. Може містити природні домішки.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-content">
+                        <li>**Тип:** Мінеральна, крупний помел</li>
+                        <li>**Застосування:** Консервація, розсоли, технічні потреби</li>
+                        <li>**Особливості:** Не очищена, може мати домішки</li>
+                    </ul>
+                </div>
+
+                <!-- Нітритна сіль -->
+                <div class="card">
+                    <img src="https://placehold.co/400x200/e2e8f0/334155?text=Нітритна+Сіль" alt="Зображення Нітритна Сіль" class="card-image">
+                    <h3 class="text-xl font-semibold section-title mb-3">Нітритна сіль</h3>
+                    <p class="text-content mb-4 flex-grow">
+                        Спеціальна суміш кухонної солі з невеликою кількістю нітриту натрію (зазвичай 0.5-0.6%). Використовується для приготування м'ясних виробів (ковбас, шинки), щоб запобігти розвитку бактерій (зокрема, ботулізму), зберегти колір м'яса та надати йому характерного смаку. Не призначена для щоденного використання.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-content">
+                        <li>**Тип:** Спеціалізована, з нітритом натрію</li>
+                        <li>**Застосування:** В'ялення м'яса, ковбасні вироби</li>
+                        <li>**Особливості:** Консервуючі властивості, безпека</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-gray-800 text-white text-center py-6 mt-10 rounded-t-xl shadow-inner">
+        <p>&copy; 2025 Світ Солі. Усі права захищені.</p>
+    </footer>
+</body>
+</html>
